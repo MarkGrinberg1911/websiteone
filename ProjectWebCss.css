@@ -1,6 +1,11 @@
 body {
     margin: 0;
 
+
+}
+
+#big {
+    display: flex;
 }
 
 .center_text {
@@ -8,12 +13,13 @@ body {
     justify-content: space-around;
     color: grey;
     font-style: italic;
-    font-size: 120px;
+    font-size: 7vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 0px;
+    padding-top: 0.01vw;
+    padding-bottom: 0.01vw;
+    margin: 0;
     width: 100vw;
+
 }
 
 .socialicon {
@@ -31,20 +37,24 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
+    margin: 0;
+
     background-image: url("https://i.pinimg.com/originals/69/b1/ef/69b1ef10ba7a627f8f56608372647770.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px;
+    background-position: center center;
 }
 
 #bullshit1 {
     font-style: italic;
-    font-size: 40px;
+    font-size: 2vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;
+
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding-left: 3vw;
+    margin: 0;
 
 }
 
@@ -52,38 +62,54 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
+    margin: 0;
+
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/images5/Black-and-White-4K-Wallpaper-HD.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 #bullshit2 {
     font-style: italic;
-    font-size: 50px;
+    font-size: 2.5vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;
+
     display: flex;
-    padding-left: 450px;
-    padding-top: 550px;
+    padding-left: 20vw;
+    padding-top: 30vw;
+    margin: 0;
 }
 
 #hero3 {
-    background-image: url("https://4kqwalls.com/wp-content/uploads/2021/12/Black-and-White-laptop-4k-wallpaper.jpg");
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    
     height: 100vh;
     width: 100vw;
-    display: flex;
+    margin: 0;
+
+    background-image: url("https://4kqwalls.com/wp-content/uploads/2021/12/Black-and-White-laptop-4k-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
 }
 
 #bullshit3 {
     font-style: italic;
-    font-size: 50px;
+    font-size: 2.5vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;
+    align-content: center;
+
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin: 0;
-    padding-top: 250px;
-    padding-left: 1500px;
+    padding-right: 4vw;
+    padding-bottom: 3vw;
 }
 
 #hero4 {
@@ -92,34 +118,97 @@ body {
     align-items: center;
     background-color: white;
     background-repeat: no-repeat;
-    height: 400px;
-    
+    height: 30vw;
+
 }
 
 .product {
     display: flex;
-    
+
 }
 
 #hero5 {
     width: 100vw;
-    height: 100px;
+    height: 10vw;
     background-color: black;
+    background-size: cover;
+    background-position: center center;
     font-style: italic;
     color: azure;
-    padding-top: 5px;
+    padding-top: 0.01vw;
 }
 
 .linktopage2 {
     display: flex;
     justify-content: baseline;
     margin: 0;
-    font-size: 50px;
-    font-family:'Courier New', Courier, monospace
-
-
+    font-family: 'Courier New', Courier, monospace
 }
-.pants{
-    height: 200px;
-    width: 200px;
+
+.pants {
+    height: 10vw;
+    width: 10vw;
+}
+#endsocial{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    padding-left: 1vw;
+}
+.endicon{
+    height: 10vh;
+    width: 20vw;
+}
+#endtwitter{
+    height: 10vh;
+ width: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+    #genericmedia {
+        display: none;
+        
+    }
+    #hero5{
+        height: 25vh;
+    }
+    .end{
+        margin:7vw;
+    }
+    #hero4{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100vh;
+        
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .pants{
+        height: 17vh;
+        width: 25vw;
+    }
+
+    #bullshit1{
+        font-size: 4vw;
+        
+    }
+    #bullshit2{
+        font-size: 4vw;
+        
+    }
+    #bullshit3{
+        font-size: 4vw;
+
+    }
+}
+@media screen and (min-width: 768px) {
+    #endsocial{
+        display: none;
+    }
+
 }
